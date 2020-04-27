@@ -9,21 +9,116 @@ header, section{
 	@include animotion;
 }
 
-.container{
- @include box;
-}
-
 h1{
 	text-align:center;
-	font-size: 4em;
+	font-size: 4.5em;
+	animation-duration: 3s;
+  animation-delay: 2s;
+  text-shadow: 5px 5px 2px #C0C0C0;
+  // animation-iteration-count: 1;
 }
 
 h2,h3,h4 {
   font-family: $headfont;
   text-align: center;
-  animation-duration: 15s;
+  // animation-duration: 15s;
 }
 
+.border{
+	border-style: dotted;
+	border-width: 10px;
+}
+
+.padding{
+	padding:30px;
+}
+// .bounceAnimation{
+// 	animation-duration: 3s;
+//   animation-delay: 2s;
+//   animation-iteration-count: infinite;
+// }
+
+.container{
+	display:grid;
+	grid-template-columns: 1.5fr 2fr 50px 2fr 1.5fr;
+	grid-template-rows: repeat(4, 2fr 5px);
+}
+
+.box{
+	background-color: $fgcolor;
+	border: 1px solid black;
+	padding: $space;
+	margin-top: $space;
+	margin-bottom: $space;
+	margin-right: $sideR;
+	margin-left: $sideL;
+	width: 200px;
+}
+
+ .box:hover {
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+     }
+
+a:link {
+	color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover{
+	color: pink;
+}
+
+#bash-me{
+	// @include box;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+#commitment{
+	// @include box;
+	grid-column: 4/5;
+	grid-row:1/2;
+}
+
+#dinoscience{
+	// @include box;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+#parallax{
+	// @include box;
+	grid-column: 4/5;
+	grid-row: 3/4;	
+}
+
+#vr{
+	// @include box;
+	grid-column: 2/3;
+	grid-row: 5/6;
+}
+
+#github{
+	// @include box;
+	grid-column: 4/5;
+	grid-row: 5/6;
+}
+
+#google-page{
+	// @include box;
+	grid-column: 2/3;
+	grid-row: 7/8;
+}
+
+#google-highlights{
+	// @include box;
+	grid-column: 4/5;
+	grid-row: 7/8;
+}
 
 [data-aos="flip-left"]{
 	transition-duration: 2s !important;

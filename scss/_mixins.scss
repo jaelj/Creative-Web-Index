@@ -1,11 +1,24 @@
-@mixin box{
-	background: white;
-	border: 1px solid black;
-	padding: $space;
-	margin-bottom: $space;
-	margin-right: $sideR;
-	margin-left: $sideL;
-}
+// @mixin box{
+// 	background: $fgcolor;
+// 	border: 1px solid black;
+// 	padding: $space;
+// 	margin-top: $space;
+// 	margin-bottom: $space;
+// 	margin-right: $sideR;
+// 	margin-left: $sideL;
+// 	width: 200px;
+// }
+
+// @mixin box1{
+// 	background: black;
+// 	border: 1px solid black;
+// 	padding: $space;
+// 	margin-top: $space;
+// 	margin-bottom: $space;
+// 	margin-right: $sideR;
+// 	margin-left: $sideL;
+// 	width: 200px;
+// }
 
 @mixin animotion{
 	animation-duration: 3s;
