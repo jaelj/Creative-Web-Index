@@ -377,13 +377,17 @@ textarea {
   padding: 0.2em 0; }
 
 body {
-  background: black;
+  background-image: url("../img/sparkles.gif");
   font-family: "Gabriela", ariel; }
 
 header, section {
   animation-duration: 3s;
   animation-delay: 0s;
   animation-iteration-count: 3; }
+
+img {
+  height: 100px;
+  width: 100px; }
 
 h1 {
   color: pink;
@@ -394,18 +398,21 @@ h1 {
   text-shadow: 5px 5px 2px #C0C0C0; }
 
 .name {
-  color: darkturquoise;
+  color: wheat;
   font-size: 2.5em; }
+
+.item-title {
+  font-size: 2em; }
 
 h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
   text-align: center; }
 
-.border {
-  border: 10px double darkturquoise; }
+p {
+  text-align: center; }
 
 .padding {
-  padding: 30px; }
+  padding: 100px; }
 
 .container {
   display: grid;
@@ -414,13 +421,14 @@ h2, h3, h4 {
 
 .box {
   background-color: pink;
-  border: 3px solid darkturquoise;
+  border: 5px solid wheat;
   padding: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 10px;
   margin-left: 10px;
-  width: 200px; }
+  width: 200px;
+  text-align: center; }
 
 .box:hover {
   background-color: white;
